@@ -1,10 +1,12 @@
 <script>
 import AppHeaderBottom from './AppHeaderBottom.vue';
+import AppHeaderMid from './AppHeaderMid.vue';
 
 export default {
     name: "AppHeader",
     components: {
-        AppHeaderBottom
+        AppHeaderBottom,
+        AppHeaderMid
     },
     data() {
         return {
@@ -88,6 +90,12 @@ export default {
                     title: "Office Productivity",
                     icon: "<i class=\"fa-solid fa-boxes-packing\"></i>"
                 }
+            ],
+            logo: [
+                {
+                    imgSrc: "MasterStudy.svg",
+                    alt: "MasterStudy Logo"
+                }
             ]
         };
     }
@@ -123,7 +131,9 @@ export default {
                 </div>
             </div>
         </section>
-        <section class="header-mid"></section>
+        <section class="header-mid">
+            <AppHeaderMid v-for="(item, index) in logo" :key="index" :imgSrc="item.imgSrc" :alt="item.alt" />
+        </section>
         <section class="header-bottom d-flex">
             <div class="header-bottom-container d-flex justify-content-between">
                 <AppHeaderBottom class="my-header-bottom" v-for="(item, index) in actions" :key="index" :actionTitle="item.title" :actionIcon="item.icon" />
@@ -181,7 +191,7 @@ export default {
     }
 
     &-bottom-container {
-        width: 60%;
+        width: 55%;
         height: 8vh;
         margin: 0 auto;
     }
