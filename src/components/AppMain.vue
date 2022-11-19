@@ -1,10 +1,12 @@
 <script>
 import AppBannerTop from './AppBannerTop.vue';
+import AppTools from './AppTools.vue';
 
 export default {
     name: "AppMain",
     components: {
         AppBannerTop,
+        AppTools,
     },
     data() {
         return {
@@ -14,17 +16,42 @@ export default {
                 title: "Udemy Affiliate Sales",
                 text: "Monetize your audience and attract new customers with Udemy!" 
             },
+            tools : [
+                {
+                    icon: "<i class=\"fa-solid fa-desktop\"></i>",
+                    href: "/computer"
+                },
+                {
+                    icon: "<i class=\"fa-solid fa-life-ring\"></i>",
+                    href: "/life-ring"
+                },
+                {
+                    icon: "<i class=\"fa-solid fa-wrench\"></i>",
+                    href: "/tool"
+                },
+                {
+                    icon: "<i class=\"fa-solid fa-cart-shopping\"></i>",
+                    href: "/shopping-cart"
+                },
+                {
+                    icon: "<i class=\"fa-solid fa-mobile-screen\"></i>",
+                    href: "/phone"
+                },
+            ]
+
+            
         }
     }
 }
 </script>
 
 <template>
-    <section class="main-section"></section>
-    <AppBannerTop :img-src="bannerTop.imgSrc" :alt="bannerTop.alt" :title="bannerTop.title"  :text="bannerTop.text"/>
-    <AppBannerTop :img-src="bannerTop.imgSrc" :alt="bannerTop.alt" :title="bannerTop.title"  :text="bannerTop.text"/>
-    <AppBannerTop :img-src="bannerTop.imgSrc" :alt="bannerTop.alt" :title="bannerTop.title"  :text="bannerTop.text"/>
-    <AppBannerTop :img-src="bannerTop.imgSrc" :alt="bannerTop.alt" :title="bannerTop.title"  :text="bannerTop.text"/>
+    <section class="main-section">
+        <AppBannerTop :img-src="bannerTop.imgSrc" :alt="bannerTop.alt" :title="bannerTop.title"  :text="bannerTop.text"/>
+        <AppTools class="tools" :tools="tools"/>
+
+    </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -33,5 +60,15 @@ export default {
 
 .main-section {
     overflow-y: scroll;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .tools{
+        position: fixed;
+        bottom: 5%;
+        right: 0;
+        transform: translate(-26%, 0);
+    }
 }
 </style>

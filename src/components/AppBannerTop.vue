@@ -50,35 +50,11 @@ export default {
             
         }
 
-        // .write {
-        //     z-index: 50;
-        //     background: linear-gradient(65deg, $primary-color, $primary-color 90%, white 60%, white);
-        //     height: 100%;
-        //     width: 70%;
-
-        //     // position: absolute;
-        //     // top: 0;
-        //     // left: 0;
-
-        //     position: absolute;
-        //     z-index: 100;
-            
-        // }
-        // .my-image {
-        //     height: 100%;
-        //     width: 50%;
-        //     // background-image: url(../assets/images/slide-1.jpg);
-        //     position: absolute;
-        //     z-index: 1;
-        //     top: 0;
-        //     left: 50%;
-        //     background-color: green;
-        // }
 
         .write {
             height: 100%;
             width: 65%;
-            background: linear-gradient(65deg, $primary-color, $primary-color 80%, rgba(0, 0, 0, 0.007) 10%, rgba(0, 0, 0, 0));
+            background: linear-gradient(65deg, $primary-color, $primary-color 80%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0));
             position: absolute;
             top: 0;
             left: 0;
@@ -100,7 +76,7 @@ export default {
         .my-image {
             height: 100%;
             width: 50%;
-            background-color: rgba(0, 128, 0, 0);
+            // background-color: rgba(0, 128, 0, 0);
             position: absolute;
             top: 0;
             left: 50%;

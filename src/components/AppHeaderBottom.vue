@@ -9,12 +9,7 @@ export default {
 </script>
 
 <template>
-    
-        
-            <!-- <a href="" class="d-flex">
-                <span v-html="actionIcon"></span>
-                <p>{{ actionTitle }}</p>
-            </a> -->
+
             <ul>
                 <li>
                     <a href="" class="d-flex">
@@ -23,8 +18,7 @@ export default {
                     </a>
                 </li>
             </ul>
-        
-    
+           
 </template>
 
 <style lang="scss" scoped>
@@ -34,10 +28,6 @@ export default {
     a{
         color: white;
     }
-        // span, p{
-        //     color: white;
-        // }
-
         span{
             margin-right: 1rem;
         }
