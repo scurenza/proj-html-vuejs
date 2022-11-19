@@ -63,12 +63,14 @@ export default {
     height: 100%;
 
     
-    .logo,
+    .logo{
+        width: 15%;
+    }
     .cta {
         width: 20%;
     }
     .searchbar {
-        width: 30%;
+        width: 35%;
         height: 100%;
         color: grey;
 
@@ -109,13 +111,10 @@ export default {
     }
 
     .cta {
+        color: grey;
         i {
             font-size: 1.5rem;
             margin-right: .5rem;
-        }
-
-        a{
-            color: grey;
         }
     }
 

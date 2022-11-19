@@ -152,6 +152,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 400;
 
 
 
@@ -162,6 +163,7 @@ export default {
         border-bottom: 1px solid grey;
         color: rgba(128, 128, 128, 0.738);
         font-size: .9rem;
+        background-color: white;
 
         &-left:hover i{
             transform: rotate(180deg);
@@ -180,6 +182,7 @@ export default {
     &-mid {
         width: 100%;
         height: 11vh;
+        background-color: white;
     }
 
     &-bottom {
