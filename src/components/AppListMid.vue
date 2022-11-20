@@ -1,9 +1,9 @@
 <script>
-import AppCardTop from './AppCardTop.vue';
+import AppCardMid from './AppCardMid.vue';
 
 export default {
-    name: "AppListTop",
-    components: { AppCardTop },
+    name: "AppListMid",
+    components: { AppCardMid },
     data() {
         return {
             cards: [
@@ -153,9 +153,38 @@ export default {
 <template>
     <section class="app-list-top">
         <div class="my-container">
-            <h4 class="title">Popular Development Courses</h4>
-            <div class="card-row d-flex flex-wrap justify-content-between">
-                <AppCardTop :cards="cards" />
+            <h2 class="title text-center">Recent courses</h2>
+            <div class="categories d-flex justify-content-between align-items-center">
+                <a href="" class="active">
+                    <span>All Categories</span>
+                </a>
+                <a href="">
+                    <span>Business</span>
+                </a>
+                <a href="">
+                    <span>Design</span>
+                </a>
+                <a href="">
+                    <span>Development</span>
+                </a>
+                <a href="">
+                    <span>IT & Software</span>
+                </a>
+                <a href="">
+                    <span>Lifestyle</span>
+                </a>
+                <a href="">
+                    <span>Marketing</span>
+                </a>
+                <a href="">
+                    <span>Office Productivity</span>
+                </a>
+            </div>
+            <div class="card-row mb-5 d-flex flex-wrap justify-content-between">
+                <AppCardMid :cards="cards" />
+            </div>
+            <div class="button text-center">
+                <button class="my-btn">SHOW ALL</button>
             </div>
         </div>
     </section>
@@ -168,12 +197,28 @@ export default {
     margin: 2rem 0 4rem;
 
     .title {
-        font-weight: 600;
-        margin-top: 4rem;
+        font-weight: 700;
+        font-size: 3rem;
+        margin: 4rem 0 3rem;
     }
 
     .row-cols-6 {
         margin-top: 2rem;
+    }
+
+    .categories{
+        width: 80%;
+        margin: 0 auto 1rem;
+
+        .active{
+            background-color: #f0f4fa;
+            padding: .6rem 1rem;
+            border-radius: 20px;
+        }
+
+        span {
+            color: grey;
+        }
     }
 }
 
