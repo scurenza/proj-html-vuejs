@@ -13,16 +13,16 @@ export default {
 </script>
 
 <template>
-    <div class="card-container">
+    <div class="card-container" v-for="index in 6" :key="index" >
         <div class="image">
-            <img src="../assets/images/1109398_4c13-272x161.jpg" alt="">
+            <img :src="getImagePath(`../assets/images/${cards[index].imgSrc}`)" alt="">
         </div>
         <div class="card-description">
             <div class="category mt-1">
-                <span> Development ></span>
+                <span> {{cards[index].category}} ></span>
             </div>
             <div class="card-text mt-2 pb-3">
-                the complete iOS 10 & Swift 3 Developer Course 
+                {{cards[index].text}} 
             </div>
             <div class="card-bottom mt-3 d-flex justify-content-between align-items-center">
                 <div class="vote">
@@ -33,8 +33,8 @@ export default {
                     <img src="../assets/images/staremptyl.svg" alt="">
                 </div>
                 <div class="price d-flex flex-column">
-                    <span class="original-price">$150</span>
-                    <span class="discount">$25</span>
+                    <span class="original-price">${{cards[index].price}}</span>
+                    <span class="discount">${{cards[index].discountedPrice}}</span>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@ export default {
             font-size: .8rem;
         }
         .card-text {
-            border-bottom: 1px solid grey;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.5);
         }
 
         .price{
