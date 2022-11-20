@@ -164,7 +164,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 .app-list-top {
-    margin: 2rem;
+    margin: 2rem 0 4rem;
 
     .title {
         font-weight: 600;

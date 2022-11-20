@@ -2,6 +2,7 @@
 import AppBannerTop from './AppBannerTop.vue';
 import AppTools from './AppTools.vue';
 import AppListTop from './AppListTop.vue';
+import AppBannerMid from './AppBannerMid.vue';
 
 export default {
     name: "AppMain",
@@ -9,6 +10,7 @@ export default {
         AppBannerTop,
         AppTools,
         AppListTop,
+        AppBannerMid
     },
     data() {
         return {
@@ -50,6 +52,7 @@ export default {
         <AppBannerTop :img-src="bannerTop.imgSrc" :alt="bannerTop.alt" :title="bannerTop.title"  :text="bannerTop.text"/>
         <AppTools class="tools" :tools="tools"/>
         <AppListTop />
+        <AppBannerMid />
     </section>
 
 </template>

@@ -57,6 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "../styles/general.scss" as *;
 
 .header-mid{
     width: 100%;
@@ -118,18 +119,6 @@ export default {
         }
     }
 
-    .my-btn {
-        color: white;
-        font-weight: 700;
-        padding: 1.2rem 1.6rem;
-        background-color: $primary-color;
-        border: none;
-        border-radius: 35px;
 
-        &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
-        }
-    }
 }
 </style>
