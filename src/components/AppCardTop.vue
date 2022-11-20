@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "AppCard",
+    name: "AppCardTop",
     props: {
         cards: Object
     },
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <div class="card-container" v-for="index in 6" :key="index" >
+    <div class="card-container" v-for="index in 6">
         <div class="image">
             <img :src="getImagePath(`../assets/images/${cards[index].imgSrc}`)" alt="">
         </div>
@@ -26,11 +26,8 @@ export default {
             </div>
             <div class="card-bottom mt-3 d-flex justify-content-between align-items-center">
                 <div class="vote">
-                    <img src="../assets/images/starfull.svg" alt="">
-                    <img src="../assets/images/starfull.svg" alt="">
-                    <img src="../assets/images/starfull.svg" alt="">
-                    <img src="../assets/images/starfull.svg" alt="">
-                    <img src="../assets/images/staremptyl.svg" alt="">
+                    <img v-for="n in cards[index].vote" src="../assets/images/starfull.svg" alt="">
+                    <img v-for="n in (5 - cards[index].vote)" src="../assets/images/staremptyl.svg" alt="">
                 </div>
                 <div class="price d-flex flex-column">
                     <span class="original-price">${{cards[index].price}}</span>

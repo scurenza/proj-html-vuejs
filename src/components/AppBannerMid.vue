@@ -34,6 +34,7 @@ export default {
     background-repeat: no-repeat;
 
     position: relative;
+    z-index: 1;
 
     .text {
         width: 30%;

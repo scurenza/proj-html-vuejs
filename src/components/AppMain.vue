@@ -72,6 +72,7 @@ export default {
         bottom: 5%;
         right: 0;
         transform: translate(-26%, 0);
+        z-index: 10;
     }
 }
 </style>
