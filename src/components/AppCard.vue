@@ -17,7 +17,7 @@ export default {
         <div class="image">
             <img :src="getImagePath(`../assets/images/${card.imgSrc}`)" alt="">
         </div>
-        <div class="card-description">
+        <div class="card-description d-flex flex-column justify-content-between">
             <div class="category mt-1">
                 <span> {{card.category}} ></span>
             </div>
@@ -54,6 +54,7 @@ export default {
     }
     .card-description {
         padding: 1.2rem;
+        min-height: 235px;
         
         .category span {
             color: grey;

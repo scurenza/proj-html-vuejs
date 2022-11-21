@@ -67,9 +67,10 @@ export default {
                 width: 300px;
                 height: 45px;
                 border: none;
+                padding-left: .5rem;
+                
                 &::placeholder {
                     font-size: .8rem;
-                    padding-left: .5rem;
                 }
 
             }
