@@ -49,6 +49,9 @@ export default {
 
     border: 1px solid rgba(128, 128, 128, 0.459);
 
+    .image img {
+        width: 100%;
+    }
     .card-description {
         padding: 1.2rem;
         
