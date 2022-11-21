@@ -1,9 +1,9 @@
 <script>
-import AppCardTop from './AppCardTop.vue';
+import AppCard from './AppCard.vue';
 
 export default {
     name: "AppListTop",
-    components: { AppCardTop },
+    components: { AppCard },
     data() {
         return {
             cards: [
@@ -155,7 +155,7 @@ export default {
         <div class="my-container">
             <h4 class="title">Popular Development Courses</h4>
             <div class="card-row d-flex flex-wrap justify-content-between">
-                <AppCardTop :cards="cards" />
+                <AppCard v-for="n in 6" :key="n" :card="cards[n]" />
             </div>
         </div>
     </section>

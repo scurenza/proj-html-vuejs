@@ -1,8 +1,8 @@
 <script>
 export default {
-    name: "AppCardTop",
+    name: "AppCard",
     props: {
-        cards: Object
+        card: Object
     },
     methods: {
         getImagePath: function(imgPath) {
@@ -13,25 +13,25 @@ export default {
 </script>
 
 <template>
-    <div class="card-container" v-for="index in 6">
+    <div class="card-container" >
         <div class="image">
-            <img :src="getImagePath(`../assets/images/${cards[index].imgSrc}`)" alt="">
+            <img :src="getImagePath(`../assets/images/${card.imgSrc}`)" alt="">
         </div>
         <div class="card-description">
             <div class="category mt-1">
-                <span> {{cards[index].category}} ></span>
+                <span> {{card.category}} ></span>
             </div>
             <div class="card-text mt-2 pb-3">
-                {{cards[index].text}} 
+                {{card.text}} 
             </div>
             <div class="card-bottom mt-3 d-flex justify-content-between align-items-center">
                 <div class="vote">
-                    <img v-for="n in cards[index].vote" src="../assets/images/starfull.svg" alt="">
-                    <img v-for="n in (5 - cards[index].vote)" src="../assets/images/staremptyl.svg" alt="">
+                    <img v-for="n in card.vote" src="../assets/images/starfull.svg" alt="">
+                    <img v-for="n in (5 - card.vote)" src="../assets/images/staremptyl.svg" alt="">
                 </div>
                 <div class="price d-flex flex-column">
-                    <span class="original-price">${{cards[index].price}}</span>
-                    <span class="discount">${{cards[index].discountedPrice}}</span>
+                    <span class="original-price">${{card.price}}</span>
+                    <span class="discount">${{card.discountedPrice}}</span>
                 </div>
             </div>
         </div>

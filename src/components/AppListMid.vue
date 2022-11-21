@@ -1,9 +1,9 @@
 <script>
-import AppCardMid from './AppCardMid.vue';
+import AppCard from './AppCard.vue';
 
 export default {
     name: "AppListMid",
-    components: { AppCardMid },
+    components: { AppCard },
     data() {
         return {
             cards: [
@@ -181,7 +181,7 @@ export default {
                 </a>
             </div>
             <div class="card-row mb-5 d-flex flex-wrap justify-content-between">
-                <AppCardMid :cards="cards" />
+                <AppCard v-for="n in 12" :key="n" :card="cards[n]" />
             </div>
             <div class="button text-center">
                 <button class="my-btn">SHOW ALL</button>

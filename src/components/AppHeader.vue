@@ -158,8 +158,8 @@ export default {
 
     &-top {
         width: 100%;
-        height: 6vh;
-        line-height: 6vh;
+        height: 4vh;
+        line-height: 4vh;
         border-bottom: 1px solid grey;
         color: rgba(128, 128, 128, 0.738);
         font-size: .9rem;
@@ -181,14 +181,14 @@ export default {
 
     &-mid {
         width: 100%;
-        height: 11vh;
+        height: 9vh;
         background-color: white;
     }
 
     &-bottom {
         width: 100%;
-        height: 8vh;
-        line-height: 8vh;
+        height: 6vh;
+        line-height: 6vh;
         background-color: $secondary-color;
 
     }
