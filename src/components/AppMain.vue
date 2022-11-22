@@ -6,6 +6,8 @@ import AppBannerMid from './AppBannerMid.vue';
 import AppListMid from './AppListMid.vue';
 import AppNewsletter from './AppNewsletter.vue';
 import AppSlider from './AppSlider.vue';
+import AppBusiness from './AppBusiness.vue';
+import AppTestimonial from './AppTestimonial.vue';
 
 export default {
     name: "AppMain",
@@ -16,7 +18,9 @@ export default {
         AppBannerMid,
         AppListMid,
         AppNewsletter,
-        AppSlider
+        AppSlider,
+        AppBusiness,
+        AppTestimonial
     },
     data() {
         return {
@@ -62,6 +66,8 @@ export default {
         <AppListMid />
         <AppNewsletter />
         <AppSlider />
+        <AppBusiness />
+        <AppTestimonial />
     </section>
 
 </template>

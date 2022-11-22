@@ -38,7 +38,7 @@ export default {
 .newsletter {
     width: 100%;
     height: 15vh;
-    margin: 3rem 0;
+    margin: 3rem 0 0;
 
     background-color: $primary-color;
 

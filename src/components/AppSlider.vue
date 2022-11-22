@@ -170,12 +170,13 @@ export default {
 @use "../styles/partials/variables" as *;
 
 .app-slider {
-    margin: 6rem 0 4rem;
-
+    background-color: $background-color;
+    padding: 5rem 0 3rem;
     .title {
         font-weight: 600;
-        margin: 4rem 0 0;
         font-size: 2.8rem;
+
+
     }
 
     .row-cols-6 {
@@ -191,9 +192,9 @@ export default {
         height: 40px;
 
         background-color: #ffffff;
-        border: 1px solid rgba(128, 128, 128, 0.616);
+        border: 1px solid rgba(128, 128, 128, 0.416);
 
-        color: grey;
+        color: rgba(128, 128, 128, 0.279);
         font-size: 1.5rem;
 
         &:hover{
