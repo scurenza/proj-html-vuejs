@@ -8,6 +8,7 @@ import AppNewsletter from './AppNewsletter.vue';
 import AppSlider from './AppSlider.vue';
 import AppBusiness from './AppBusiness.vue';
 import AppTestimonial from './AppTestimonial.vue';
+import AppFooter from './AppFooter.vue';
 
 export default {
     name: "AppMain",
@@ -20,7 +21,8 @@ export default {
         AppNewsletter,
         AppSlider,
         AppBusiness,
-        AppTestimonial
+        AppTestimonial,
+        AppFooter
     },
     data() {
         return {
@@ -68,6 +70,7 @@ export default {
         <AppSlider />
         <AppBusiness />
         <AppTestimonial />
+        <AppFooter />
     </section>
 
 </template>
